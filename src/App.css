@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: #dee2e6;
+  height: 100vh;
+ 
+}
+
+.nav-link:hover{
+  /* color: rgb(69, 69, 230); */
+  transform: translate(-2%, -2px);
+}
+
+hr{
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.navbar{
+  z-index: 10;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  color: rgb(255, 0, 191);
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.nav-link{
+  /* color:antiquewhite; */
+  font-weight: bolder;
+  font-size: 1.2rem;
+
+}
+
+.form-check-label{
+  /* color:antiquewhite; */
+  font-weight: bolder;
+  font-size: 1rem;
+
+}
+
+.time{
+  color: crimson;
+}
+
+
+.video{
+  position: absolute;
+  top: 0%;
+  /* z-index: -10; */
+  margin: 0%;
+  padding: 0%;
+  background-size: cover;
+}
+
+/* .navbar{
+  position: absolute;
+  top: 0%;
+} */
+
+.footer{
+  position: relative;
+  bottom: -788px;
+}
+
+.product{
+  color: rgb(255, 0, 191);
+  font-family: 'Rubik Dirt', cursive;
+}
+
+
+
+
+
+.wrapper{
+  display: inline-flex;
+  position: absolute;
+    left: 28%;
+    top: 38%;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.wrapper .static-txt{
+  color: rgb(0, 255, 68);
+  font-size: 60px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px ;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  color: blue;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps( 4) infinite;
+
+}
+
+@keyframes slide{
+  100%{
+ top: -360px; 
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+}
+
+.dynamic-txts li span ::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  background: blue;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid green;
+  animation: typing 1.5s steps(24) infinite;
+}
+
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 -35px
+  }
+}
+
+.alert{
+  position: absolute;
+  width: 100vw;
+  top: 60px;
+}
