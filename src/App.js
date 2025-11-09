@@ -5,7 +5,6 @@ import React, {useState} from 'react'
 import Navbar from './Components/Navbar';
 import Text from './Components/Text';
 import ShowAlert from './Components/ShowAlert';
-import Home from './Components/Home';
 import Footer from './Components/Footer';
 // import BGVideo from "./Video/video.mp4"
 
