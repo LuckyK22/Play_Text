@@ -84,7 +84,7 @@ function App() {
               <Router>
 
               {/* --------------------------------------------------------------NavBar----------------------------------------------------------*/}
-              <Navbar title= " Daddu's" Mode={Mode} text={text} toogleMode={toogleMode} moon={moon}/> 
+              <Navbar title= "Play Text" Mode={Mode} text={text} toogleMode={toogleMode} moon={moon}/> 
               <hr />
               {/* ----------------------------------------------------------------------------------------------------------------------------- */}
 
@@ -95,8 +95,8 @@ function App() {
 
 
               <Routes>
-                <Route path="/" element={<Home/>} />
-                <Route path="/text" element={<Text showAlert={showAlert} Mode={inputMode}  text={text} title="Convert your sentence into UpperCase:-"  value="Enter your text here"/>} />
+                <Route path="/" element={<Text showAlert={showAlert} Mode={inputMode}  text={text} title="Convert your sentence into UpperCase"  value="Enter your text here"/>} />
+                {/* <Route path="/text" element={} /> */}
                 {/* <Route path='/SignUP'  element={<SignUP />} /> */}
               </Routes>
 
